@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/postgreDB</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">cavoixanh</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL82Dialect</property>
+
+        <mapping class="annotation.model.Attendance"/>
+        <mapping class="annotation.model.Attendance"/>
+        <mapping class="annotation.model.ClassRoom"/>
+        <mapping class="annotation.model.ClassRoomStudent"/>
+        <mapping class="annotation.model.Course"/>
+        <mapping class="annotation.model.Exam"/>
+        <mapping class="annotation.model.ExamResult"/>
+        <mapping class="annotation.model.ExamType"/>
+        <mapping class="annotation.model.Grade"/>
+        <mapping class="annotation.model.Parent"/>
+        <mapping class="annotation.model.Student"/>
+        <mapping class="annotation.model.Teacher"/>
+    </session-factory>
+</hibernate-configuration>
